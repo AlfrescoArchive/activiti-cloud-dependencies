@@ -90,8 +90,7 @@
   </repositories>
 
   <properties>
-    <activiti-cloud-build.version>7.0.38</activiti-cloud-build.version>
-    <activiti-cloud-api.version>7.0.48</activiti-cloud-api.version>
+    <activiti-cloud-build.version>7.0.38</activiti-cloud-build.version>  
     <activiti-cloud-service-common.version>7.0.80</activiti-cloud-service-common.version>
     <activiti-cloud-runtime-bundle-service.version>7.0.110</activiti-cloud-runtime-bundle-service.version>
     <activiti-cloud-query-service.version>7.0.97</activiti-cloud-query-service.version>
@@ -99,6 +98,7 @@
     <activiti-cloud-connectors.version>7.0.68</activiti-cloud-connectors.version>
     <activiti-cloud-app-service.version>7.0.58</activiti-cloud-app-service.version>
     <activiti-cloud-acceptance-tests.version>7.0.47</activiti-cloud-acceptance-tests.version>
+    <activiti-cloud-notifications-graphql-service.version>7.0.0</activiti-cloud-notifications-graphql-service.version>
   </properties>
 
   <dependencyManagement>
@@ -166,6 +166,12 @@
       <groupId>org.activiti.cloud.acc</groupId>
       <artifactId>activiti-cloud-acceptance-tests-dependencies</artifactId>
       <version>${activiti-cloud-acceptance-tests.version}</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>org.activiti.cloud.notifications.graphql</groupId>
+      <artifactId>activiti-cloud-notifications-graphql-dependencies</artifactId>
+      <version>${activiti-cloud-notifications-graphql-service.version}</version>
       <type>pom</type>
     </dependency>
   </dependencies>
