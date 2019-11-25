@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.activiti.cloud.dependencies</groupId>
     <artifactId>activiti-cloud-dependencies-parent</artifactId>
-    <version>7.1.216</version>
+    <version>7.1.0.M5</version>
   </parent>
   <artifactId>activiti-cloud-dependencies-tests</artifactId>
   <packaging>pom</packaging>
@@ -15,11 +15,11 @@
   <properties>
     <maven.deploy.skip>true</maven.deploy.skip>
     <enforceFail>true</enforceFail>
-    <example-runtime-bundle.version>7.1.294</example-runtime-bundle.version>
-    <example-cloud-connector.version>7.1.248</example-cloud-connector.version>
-    <activiti-cloud-audit.version>7.1.238</activiti-cloud-audit.version>
-    <activiti-cloud-query.version>7.1.244</activiti-cloud-query.version>
-    <activiti-cloud-notifications-graphql.version>7.1.262</activiti-cloud-notifications-graphql.version>
+    <example-runtime-bundle.version>7.1.0.M5</example-runtime-bundle.version>
+    <example-cloud-connector.version>7.1.0.M5</example-cloud-connector.version>
+    <activiti-cloud-audit.version>7.1.0.M5</activiti-cloud-audit.version>
+    <activiti-cloud-query.version>7.1.0.M5</activiti-cloud-query.version>
+    <activiti-cloud-notifications-graphql.version>7.1.0.M5</activiti-cloud-notifications-graphql.version>
   </properties>
   
   <dependencies>
