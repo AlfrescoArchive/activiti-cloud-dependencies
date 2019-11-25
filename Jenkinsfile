@@ -2,6 +2,9 @@ pipeline {
     agent {
       label "jenkins-maven-java11"
     }
+    options {
+      disableConcurrentBuilds()
+    }  
     environment {
       ORG               = 'activiti'
       APP_NAME          = 'activiti-cloud-dependencies'
