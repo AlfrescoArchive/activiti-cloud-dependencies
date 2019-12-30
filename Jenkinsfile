@@ -27,7 +27,7 @@ pipeline {
           container('maven') {                   
             sh "git config --global credential.helper store"
             sh "jx step git credentials"
-            
+            sh "git fetch --tags"
              script {
                 def GIT_COMMIT_DETAILS = sh (
                     script: 'make git-rev-list',
