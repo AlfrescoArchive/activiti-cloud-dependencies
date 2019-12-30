@@ -145,4 +145,12 @@ git-rev-list:
 	$(eval REV_TAG = $(shell git describe ${PREVIOUS_REV}))
 	$(eval PREVIOUS_REV_TAG = $(shell git describe ${REV}))
 	@echo Found commits between $(PREVIOUS_REV_TAG) and $(REV_TAG) tags:
+	mvn dependency:tree -Dincludes:org.activiti -pl dependencies >../latest.dep
 	git rev-list $(PREVIOUS_REV)..$(REV) --first-parent --pretty
+	git reset --hard origin/master
+	git pull origin master
+  git checkout $(REV) 
+	mvn dependency:tree -Dincludes:org.activiti -pl dependencies >../prev.dep
+	diff ../latest.dep ../prev.dep
+	
+	
