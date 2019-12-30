@@ -149,7 +149,7 @@ git-rev-list:
 	git rev-list $(PREVIOUS_REV)..$(REV) --first-parent --pretty
 	git reset --hard origin/master
 	git pull origin master
-  git checkout $(REV) 
+	git checkout $(REV) 
 	mvn dependency:tree -Dincludes:org.activiti -pl dependencies >../prev.dep
 	diff ../latest.dep ../prev.dep
 	
