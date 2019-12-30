@@ -26,7 +26,15 @@ pipeline {
         steps {
           container('maven') {                   
             sh "git config --global credential.helper store"
-            sh "jx step git credentials"  
+            sh "jx step git credentials"
+            
+             script {
+                def GIT_COMMIT_DETAILS = sh (
+                    script: 'make git-rev-list',
+                    returnStdout: true
+                ).trim()
+                println GIT_COMMIT_DETAILS
+             }
             sh "mvn versions:set -DnewVersion=$PREVIEW_NAMESPACE"
             sh "mvn install"
             sh "make updatebot/push-version-dry"
