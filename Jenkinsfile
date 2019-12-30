@@ -84,7 +84,7 @@ pipeline {
                 ).trim()
                 println GIT_COMMIT_DETAILS
 
-            slackSend(channel: "##activiti-community-builds", message: "New build propagated to AE https://github.com/Alfresco/alfresco-process-parent/pulls ${GIT_COMMIT_DETAILS}" , sendAsText: true)
+            slackSend(channel: "##activiti-community-builds",color: "good", message: "New build propagated to AE https://github.com/Alfresco/alfresco-process-parent/pulls ${GIT_COMMIT_DETAILS}" , sendAsText: true)
             }
           }
         }
@@ -94,7 +94,7 @@ pipeline {
               slackSend(
                 channel: "#activiti-community-builds",
                   color: "danger",
-                  message: "Develop is failed http://jenkins.jx.35.242.205.159.nip.io/job/Activiti/job/activiti-cloud-dependencies/job/develop/"
+                  message: "$BUILD_URL"
               )
             }
         }
