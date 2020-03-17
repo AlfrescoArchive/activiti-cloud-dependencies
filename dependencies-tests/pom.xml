@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.activiti.cloud.dependencies</groupId>
     <artifactId>activiti-cloud-dependencies-parent</artifactId>
-    <version>7.1.356</version>
+    <version>7.1.0.M7.MOCK3</version>
   </parent>
   <artifactId>activiti-cloud-dependencies-tests</artifactId>
   <packaging>pom</packaging>
@@ -13,12 +13,12 @@
   <properties>
     <maven.deploy.skip>true</maven.deploy.skip>
     <enforceFail>true</enforceFail>
-    <activiti-cloud-modeling.version>7.1.723</activiti-cloud-modeling.version>
-    <example-runtime-bundle.version>7.1.405</example-runtime-bundle.version>
-    <example-cloud-connector.version>7.1.347</example-cloud-connector.version>
-    <activiti-cloud-audit.version>7.1.333</activiti-cloud-audit.version>
-    <activiti-cloud-query.version>7.1.340</activiti-cloud-query.version>
-    <activiti-cloud-notifications-graphql.version>7.1.371</activiti-cloud-notifications-graphql.version>
+    <activiti-cloud-modeling.version>7.1.0.M7.MOCK3</activiti-cloud-modeling.version>
+    <example-runtime-bundle.version>7.1.0.M7.MOCK3</example-runtime-bundle.version>
+    <example-cloud-connector.version>7.1.0.M7.MOCK3</example-cloud-connector.version>
+    <activiti-cloud-audit.version>7.1.0.M7.MOCK3</activiti-cloud-audit.version>
+    <activiti-cloud-query.version>7.1.0.M7.MOCK3</activiti-cloud-query.version>
+    <activiti-cloud-notifications-graphql.version>7.1.0.M7.MOCK3</activiti-cloud-notifications-graphql.version>
   </properties>
   <dependencies>
     <dependency>
